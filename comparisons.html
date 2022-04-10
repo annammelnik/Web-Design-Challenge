@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="design.css">
-    <title>Cloudiness</title>
+    <title>Comparisons</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </head>
+
 
 <body>
     <div class="navigation">
@@ -49,44 +50,45 @@
             </div>
         </nav>
     </div><br>
-    <div class="temp">	
+    <div class="comparisons">
         <div class="row">
-            <div class="col-lg-7 col-md-12">
-                <div class="box">
-                    <h1 class="title">Latitude vs Cloudiness</h1>
-                    <hr class="light">
-                    <img alt="tempgraph" src="latvcloud.png" class="visualization rounded float-left">
-                    <p>Data is all over the place, showing no apparent relationship between the two variables.
-                    </p>
-                </div>
-                
-            </div>
-            <div class="col-lg-5 col-md-12">
-                <div class="box">
-                    <h3 class="title">Visualizations</h3>
-                    <hr class="light">
-                    <div class="container">
-                        <div class="row" style="padding-bottom: 30px;">
-                            <div class="col-6">
-                                <a href="temp.html"><img alt="temp" src="latvtemp.png" class="image-fluid"></a>
-                            </div>
-                            <div class="col-6">
-                                <a href="humidity.html"><img alt="Humidity" src="latvhum.png" class="image-fluid"></a>
-                            </div>
+            <div class="box">
+                <h3 class="title">Visual Comparisons:</h3>
+                <hr>
+                <p>Click any plot to get an in-depth analysis.</p>
+                <div class="container" style="padding-bottom: 10px;">
+                    <div class="row">
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">Latitude vs. Temperature</div>
+                            <a href="temp.html">
+                                <img class="panel" src="latvtemp.png" alt="temp">
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="cloudiness.html"><img alt="Cloudiness" src="latvcloud.png" class="image-fluid"></a>
-                            </div>
-                            <div class="col-6">
-                                <a href="wind.html"><img alt="Wind Speed" src="latvwind.png" class="image-fluid"></a>
-                            </div>
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">Latitude vs. Humidity</div>
+                            <a href="humidity.html">
+                                <img class="panel" src="latvhum.png" alt="humidity">
+                            </a>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">Latitude vs. Cloudiness</div>
+                            <a href="cloudiness.html">
+                                <img class="panel" src="latvcloud.png" alt="cloudiness">
+                            </a>
+                        </div>
+                        <div class="col-lg-6" style="padding-bottom: 30px;">
+                            <div class="title">Latitude vs. Wind Speed</div>
+                            <a href="wind.html">
+                                <img class="panel" src="latvwind.png" alt="wind">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </div>
     </div>
+
+
 </body>
